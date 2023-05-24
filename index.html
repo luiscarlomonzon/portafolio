@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+<header>
+    <img class="logoalura" src="imagenes/logo.png" alt="logo de alura">
+    <h1 class="titulo">Encriptador de Texto</h1>
+</header>
+<body>
+    <main>
+        <section class="container">
+            <textarea class="text-area" id="text-area" cols="41" rows="8" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                  </svg>  Solo letras minusculas y sin acento.</h6>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="cuadro-derecho">
+            <img src="imagenes/Muñeco.png" id="dibujo">
+                <div class="ningun-mensaje" id="ningun-mensaje">
+                    <textarea class="mensaje" id="mensaje" cols="22" rows="7"></textarea>
+                    <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                    <p id="ingresa-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <button class="copiar" id="botoncopiar" style="display: none;">Copiar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
